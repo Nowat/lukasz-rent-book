@@ -14,5 +14,4 @@ import javax.persistence.*;
 public class BookClass {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-}
+    private Long id;}

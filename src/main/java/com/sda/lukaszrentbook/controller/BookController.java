@@ -33,13 +33,13 @@ public class BookController {
         return bookService.getById(id);
     }
 
-//    @GetMapping
-//    @ResponseStatus(HttpStatus.OK)
-//    public List<Book> search(@RequestParam(value = "category", defaultValue = "")String category,
-//                             @RequestParam(value = "format", defaultValue = "") String format,
-//                             @RequestParam(value = "minPrice", defaultValue = "0") Integer minPrice,
-//                             @RequestParam(value = "maxPrice", required = false) Integer maxPrice){
-//        return bookService.search(category,format,minPrice,maxPrice);
-//    }
-// pamietac zeby wrocic do bookservisu i zrobic po czym nastepuje szukanie
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    public List<Book> search(@RequestParam(value = "category", defaultValue = "")String category,
+                             @RequestParam(value = "format", defaultValue = "") String format,
+                             @RequestParam(value = "minPrice", defaultValue = "0") Integer minPrice,
+                             @RequestParam(value = "maxPrice", required = false) Integer maxPrice){
+        return bookService.search(category,format,minPrice,maxPrice);
+    }
+
 }

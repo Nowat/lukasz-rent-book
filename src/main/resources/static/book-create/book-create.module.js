@@ -1,0 +1,1 @@
+angular.module('book-create', ['book', 'ngRoute']);

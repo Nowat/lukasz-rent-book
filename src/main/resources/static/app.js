@@ -1,0 +1,1 @@
+var app = angular.module('app', ['book-list', 'book-create', 'book-edit', 'book-create']);

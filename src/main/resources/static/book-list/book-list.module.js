@@ -1,0 +1,1 @@
+angular.module('book-list', ['ngRoute', 'book']);

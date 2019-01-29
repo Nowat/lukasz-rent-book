@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
-    List<Book> findByCategoryContaining(String category);
+    List<Book> findByCategoryContainingIgnoreCaseAndFormatContainingAndPriceBetween(String category,String format, Integer minPrice, Integer maxPrice);
 }
